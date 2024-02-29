@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #800ef1, #8826e9);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+header{
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding:2rem 2rem 0 2rem;
+    gap: 5rem;
+    justify-content: center;
+    font-family: Space Grotesk;
+    color: rgb(29, 29, 29);
+
+
+}
+header img{
+    display: none;
+}
+header a:hover{
+    color: #ffffff;
+    transition: .400s;
+    cursor: pointer;
+
+}
+.name {
+    padding-top: 2rem;
+    font-size: 3rem;
+    color: antiquewhite;
+    font-family: Space Grotesk;
+    text-align: center;
+
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem 10rem 0 12rem;
+}
+
+.card {
+    width: 31%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.card img {
+    width: 80%;
+    height: 15rem;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: 3px 5px #e8e8e8;
+
+
+}
+
+.card p {
+    padding-left: 2.9rem;
+    padding-right: 2.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: .400s;
+    padding-bottom: 0;
+}
+
+a:hover {
+    color: #800ef1;
+}
+
+.card hr {
+    width: 31%;
+    font-size: 5px;
+    border: 1px solid #800ef1;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.card h2 {
+    font-family: Space Grotesk;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #333333;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer a {
+    color: rgb(0, 98, 255);
+}
+
+footer p {
+    color: #ffffff;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5e5d5d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #969494;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    hr {
+        display: none;
+    }
+
+    .body {
+        padding: 0;
+    }
+
+    .card {
+        width:calc((100% - 0rem)/1);
+        margin: 0 2rem 0 2rem;
+    }
+    header a{
+        display: none;
+    }
+    header img{
+        display: block;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width:1023px) and (min-width:768px) {
+    .body {
+        padding: 0 1rem 0 1.5rem;
+
+    }
+
+    hr {
+        display: none;
+    }
+    .card {
+        width:calc((100% - 1.5rem)/2);
+
+    }
+}
+@media screen and (max-width:1145px){
+    hr {
+        display: none;
+    }
+}
